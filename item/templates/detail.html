@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block content%}
+    <div >
+        <div class="my-12 mx-40">
+            <div class="flex">
+                
+                    <img src="{{item.image.url}}" class="size-32 m-4 border-4 border-green-500 rounded-br-xl rounded-tl-xl">
+                    <img src="{{item.image.url}}" class="size-64 m-4 border-4 border-green-500 rounded-br-xl rounded-tl-xl">
+               
+                <div class="space-y-4 font-semibold text-3xl py-12 px-40">
+                    <h2>{{item.name}}</h2>
+                    <h2 class="text-green-900">Rs.{{item.price}}0</h2>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+{% endblock%}

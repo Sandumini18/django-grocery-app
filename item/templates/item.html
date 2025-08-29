@@ -1,0 +1,19 @@
+
+<div class="px-40 py-6">
+<div class="grid grid-cols-5 space-y-2">
+    {% for item in items %}
+    <a href="{% url 'item:detail' item.name %}">
+    <div class="bg-white m-2 py-6 rounded-xl h-full">
+        <div class="h-3/4">
+            <img src={{item.image.url}}>
+        </div>
+        <div class="text-center font-semibold mt-4">
+            <p>{{item.name}}</p>
+            <p>Rs.{{item.price}}0</p>
+        </div>
+    </div>
+    </a>
+    
+    {% endfor %}
+</div>
+</div>

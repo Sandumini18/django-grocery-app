@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+db.sqlite3
+media/
+
+# Environments
+.env
+venv/
+env/
+ENV/
+*.env
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Migrations (optional: keep if you want others to apply them)
+**/migrations/__pycache__/
+**/migrations/*.py
+
+# Static files (can be regenerated)
+staticfiles/
