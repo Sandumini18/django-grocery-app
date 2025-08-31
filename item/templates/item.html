@@ -1,19 +1,23 @@
 
 <div class="px-40 py-6">
-<div class="grid grid-cols-5 space-y-2">
-    {% for item in items %}
-    <a href="{% url 'item:detail' item.name %}">
-    <div class="bg-white m-2 py-6 rounded-xl h-full">
-        <div class="h-3/4">
-            <img src={{item.image.url}}>
+    <div class="grid grid-cols-5 gap-6">
+        {% for item in items %}
+        <div class="bg-green-100 pb-20 rounded-xl h-full">
+            <a href="{% url 'item:detail' item.name %}">
+            <div class="bg-white m-2 py-6 rounded-xl h-full">
+                <div class="h-3/4">
+                    <img src={{item.image.url}}>
+                </div>
+                <div class="text-center font-semibold ">
+                    <p>{{item.name}}</p>
+                    <p>Rs.{{item.price}}0</p>
+                </div>
+            </div>
+            </a>
+            <a href="{% url 'cart:add_to_cart' item.id %}">
+                <div class="bg-white mx-2 py-4 rounded text-center">Add to cart</div>
+            </a>
         </div>
-        <div class="text-center font-semibold mt-4">
-            <p>{{item.name}}</p>
-            <p>Rs.{{item.price}}0</p>
-        </div>
+        {% endfor %}
     </div>
-    </a>
-    
-    {% endfor %}
-</div>
 </div>
