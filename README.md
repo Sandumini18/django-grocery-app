@@ -6,3 +6,4 @@ Practice project to learn Django basics.
 - Signup, login, logout
 - Product & category listing
 - Search functionality
+- Add to cart functionality
